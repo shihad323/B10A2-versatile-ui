@@ -473,6 +473,47 @@ main{
 .foot-1{
     padding: 20px;
 }
+
+
+.gym-news{
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    margin-bottom: 30px;
+}
+.st-news{
+    flex: 1;
+    padding: 20px;
+}
+.hover-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect */
+.hover-button:hover {
+    background-color: #45a049; /* Darker green */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Adds a shadow */
+}
+.gym-img{
+    width: 100%;
+    height: 400px;
+}
+.news-up{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+h4 a{
+    text-decoration: none;
+    color: white;
+}
 /* Styles for Medium Screens */
 @media (min-width: 576px) and (max-width: 932px) {
     .nav-right{
@@ -533,6 +574,12 @@ main{
     }
     .foot-1{
         flex-direction: column;
+    }
+    .gym-news{
+        flex-direction: column;
+    }
+    .gym-img{
+        height: 500px;
     }
 }
 /* Styles for Small Screens*/
@@ -636,5 +683,14 @@ main{
     }
     .foot-right{
         flex-direction: column;
+    }
+    .gym-news{
+        flex-direction: column;
+    }
+    .cir-st , .nd-btn {
+        padding: 0;
+    }
+    .gym-img{
+        height: 300px;
     }
 }
